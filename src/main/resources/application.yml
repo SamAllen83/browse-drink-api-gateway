@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  webflux:
+    static-locations: "classpath:/static/"
+server:
+  port: 3001
