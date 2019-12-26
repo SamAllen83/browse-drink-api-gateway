@@ -1,7 +1,14 @@
 spring:
-  profiles:
-    active: @spring.profiles.active@
   webflux:
     static-locations: "classpath:/static/"
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - OPTIONS
 server:
   port: 3001
