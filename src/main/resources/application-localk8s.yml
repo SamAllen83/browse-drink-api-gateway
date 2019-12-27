@@ -1,0 +1,5 @@
+#Environment override
+bartender:
+  api:
+    base:
+      uri: http://bartender-api.default.svc.cluster.local:8080/

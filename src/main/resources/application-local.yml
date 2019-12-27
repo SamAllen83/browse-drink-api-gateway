@@ -1,0 +1,5 @@
+#Environment override
+bartender:
+  api:
+    base:
+      uri: http://localhost:30000/

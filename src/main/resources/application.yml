@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Browse Drink API Gateway
+logging:
+  level:
+    root: INFO
+management:
+  endpoints:
+    enabled-by-default: true
+graph:
+  ql:
+    resource: graphql
+bartender:
+  api:
+    base:
+      #Environment override required
+      uri:
+    graph:
+      ql:
+        url: ${bartender.api.base.uri}${graph.ql.resource}
+server:
+  port: 8081
