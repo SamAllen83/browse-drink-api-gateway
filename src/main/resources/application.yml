@@ -1,6 +1,9 @@
 spring:
   application:
     name: Browse Drink API Gateway
+  #Default, override for environment
+  profiles:
+    active: local
 logging:
   level:
     root: INFO

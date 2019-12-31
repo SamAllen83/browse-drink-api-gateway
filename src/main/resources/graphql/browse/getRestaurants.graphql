@@ -1,0 +1,14 @@
+query {
+    getRestaurants{
+        id
+        name
+        priceRange
+        imageSrc
+        imageDescription
+        description
+        menu {
+            item
+            price
+        }
+    }
+}

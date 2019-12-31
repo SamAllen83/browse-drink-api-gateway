@@ -2,4 +2,4 @@
 bartender:
   api:
     base:
-      uri: http://localhost:30000/
+      uri: http://localhost:30080/
